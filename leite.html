@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+    
+<head>
+	<meta charset="UTF-8">
+	<title>Tela de cadastro</title>
+	
+	<style>
+		h1 {
+			margin-bottom: 1rem;
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: auto;
+        
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		fieldset {
+			border: 0;
+		}
+
+		body, input, select, textarea, button {
+			font-family: sans-serif;
+            font-size: 1em;
+            background: rgb(51, 82, 59);
+		}
+		
+		.grupo:before, .grupo:after {
+			content: " ";
+			display: table;
+		}
+		
+		.grupo:after {
+			clear: both;
+		}
+
+		.campo {
+			margin-bottom: 1em;
+		}
+
+		.campo label {
+			margin-bottom: 0.2em;
+			color: rgb(255, 255, 255);
+			display: block;
+		}
+
+		fieldset.grupo .campo {
+			float:  left;
+			margin-right: 1em;
+		}
+
+		.campo input[type="text"],
+		.campo select,
+		.campo textarea {
+			padding: 0.2em;
+			border: 1px solid rgb(255, 255, 255);
+			box-shadow: 2px 2px 2px rgba(255, 254, 254, 0.2);
+			display: block;
+		}
+
+		.campo select option {
+			padding-right: 1em;
+		}
+
+		.campo input:focus, .campo select:focus, .campo textarea:focus {
+			background: rgb(204, 204, 137);
+		}
+
+			.botao {
+			font-size: 1.5em;
+			background: #F90;
+			border: 0;
+			margin-bottom: 1em;
+			color: #FFF;
+			padding: 0.2em 0.6em;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+
+		.botao:hover {
+			background: #FB0;
+			box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+			text-shadow: none;
+		}
+
+		.botao, select, label.checkbox {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+<h1>Cadastro Quantidade diaria de leite</h1>
+
+<form action="#" method="post">
+<fieldset>
+	
+	<fieldset class="grupo">
+		<div class="campo">
+			<label for="nome">Codigo</label>
+			<input type="text" id="nome" name="nome" style="width: 20em" value="" />
+		</div>
+	
+	</fieldset>	
+	
+
+	</fieldset>
+    <div class="campo">
+		<label for="mensagem">Ordenhador</label>
+		<textarea rows="1" style="width: 41em" id="mensagem" name="mensagem"></textarea>
+    </div>
+    <div class="campo">
+		<label for="mensagem">Hora</label>
+		<textarea rows="1" style="width: 15em" id="mensagem" name="mensagem"></textarea>
+	</div>
+	<div class="campo">
+		<label for="mensagem">Quantidade de leite produzida hoje</label>
+		<textarea rows="1" style="width: 15em" id="mensagem" name="mensagem"></textarea>
+	</div>
+
+    <script>
+        function alerta()
+        {
+        alert("cadastrado!");
+	
+        }
+		
+    
+        </script>
+	<button class="botao" onclick="alerta()"  name="submit">Enviar</button>
+	
+</fieldset>
+</form>
+
+</body>
+</html>
